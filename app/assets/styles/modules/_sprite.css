@@ -1,0 +1,100 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+    .icon {
+      background-image: url('../../assets/images/sprites/sprite-cb788732.svg');
+    }
+
+    .no-svg .icon {
+      background-image: url('../../assets/images/sprites/sprite-cb788732.png');
+    }
+
+  .icon--amex-desktop {
+    width: 44px;
+    height: 14px;
+    background-position: 84.61538461538461% 31.640625%;
+  }
+
+  .icon--arrow-left-desktop {
+    width: 52px;
+    height: 52px;
+    background-position: 78.76106194690266% 95.41284403669725%;
+  }
+
+  .icon--arrow-right-blue {
+    width: 12px;
+    height: 18px;
+    background-position: 98.1203007518797% 42.857142857142854%;
+  }
+
+  .icon--arrow-right-desktop {
+    width: 52px;
+    height: 52px;
+    background-position: 55.75221238938053% 95.41284403669725%;
+  }
+
+  .icon--cabin-desktop {
+    width: 99px;
+    height: 100px;
+    background-position: 55.3072625698324% 4.705882352941177%;
+  }
+
+  .icon--dashed-underline-darkblue-desktop {
+    width: 278px;
+    height: 5px;
+    background-position: 0 0;
+  }
+
+  .icon--dashed-underline-lightblue-desktop {
+    width: 271px;
+    height: 3px;
+    background-position: 0 1.8726591760299625%;
+  }
+
+  .icon--flag-desktop {
+    width: 26px;
+    height: 14px;
+    background-position: 96.03174603174604% 31.640625%;
+  }
+
+  .icon--logo-desktop {
+    width: 75px;
+    height: 73px;
+    background-position: 97.53694581280789% 4.060913705583756%;
+  }
+
+  .icon--seat-desktop {
+    width: 99px;
+    height: 100px;
+    background-position: 0 63.529411764705884%;
+  }
+
+  .icon--shoe-desktop {
+    width: 99px;
+    height: 100px;
+    background-position: 55.3072625698324% 63.529411764705884%;
+  }
+
+  .icon--smile-desktop {
+    width: 99px;
+    height: 100px;
+    background-position: 0 4.705882352941177%;
+  }
+
+  .icon--social-icon--facebook {
+    width: 63px;
+    height: 62px;
+    background-position: 29.302325581395348% 100%;
+  }
+
+  .icon--social-icon--white-instagram {
+    width: 63px;
+    height: 62px;
+    background-position: 0 100%;
+  }
+
+  .icon--social-icon--white-twitter {
+    width: 63px;
+    height: 62px;
+    background-position: 92.09302325581395% 51.92307692307692%;
+  }

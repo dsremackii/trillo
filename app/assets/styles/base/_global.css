@@ -1,0 +1,32 @@
+/* edit how you want to use global html */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+ div {
+   height: 400px;
+   background-color: grey;
+  
+ }
+
+ .lll {
+   display: block;
+   background-repeat: no-repeat;
+   background-color: grey;
+  
+   
+ }
+  

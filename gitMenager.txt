@@ -1,0 +1,38 @@
+git --version
+
+git config --global user.name "name"
+git config --global user.email "email@mail.com"
+enter folder of project
+
+git init   //making repo
+
+git status
+
+git commit - m "name of done things"
+
+git checkout --
+
+git remote set-url origin https://github.com/nameofuser/reponame.git
+git remote -v
+git push origin master
+
+
+git branch
+
+git add -A
+git commit -m "name of stagging"
+git push origin master
+
+git branch name-of-branch
+
+git checkout -b nameOfBranch  --> makes and go to that branch
+git checkout name-of-branch
+git checkout master 
+git merge name-of-branch
+
+git pull origin master
+
+git merge name-of-branch --no-ff  --->show in github all changes
+
+
+
