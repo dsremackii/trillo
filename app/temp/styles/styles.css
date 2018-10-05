@@ -479,7 +479,30 @@ Instead edit gulp/templates/sprite */
     height: 7rem;
     background-color: var(--colorWhite);
     border-bottom: var(--colorGreyLight2);
+
+    
 }
+.site-header__logo {
+  height: 3.25rem;
+}
+.site-header__search {}
+.site-header__button {}
+.site-header__icon {
+  height: 2rem;
+  width: 2rem;
+}
+.site-header__user-nav__icon-box {}
+.site-header__user-nav__icon {
+  height: 2.25rem;
+  width: 2.25rem;
+}
+.site-header__user-nav__notification {}
+.site-header__user-nav__user {}
+.site-header__user-nav__user-photo {
+  height: 3.75rem;
+  border-radius: 50%;
+}
+.site-header__user-nav__user-name {}
 .site-hotel-view {
 background-color: var(--colorWhite);
 -ms-flex:1;

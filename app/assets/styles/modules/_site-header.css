@@ -2,4 +2,55 @@
     height: 7rem;
     background-color: var(--colorWhite);
     border-bottom: var(--colorGreyLight2);
+
+    &__logo {
+        height: 3.25rem;
+    }
+
+    &__search {
+
+    }
+
+    &__button {
+
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    
+}
+
+.site-header {
+
+    &__user-nav {
+        &__icon-box {
+
+        }
+
+        &__icon {
+            height: 2.25rem;
+            width: 2.25rem;
+        }
+
+        &__notification {
+
+        }
+
+        &__user {
+
+        }
+
+        &__user-photo {
+            height: 3.75rem;
+            border-radius: 50%;
+        }
+
+        &__user-name {
+
+        }
+
+    }
 }

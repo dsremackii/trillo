@@ -20,7 +20,34 @@
 <body>
   <div class="container">
     <header class="site-header">
-
+      <img src="assets/images/logo.png" alt="trilo logo" class="site-header__logo">
+      <form action="#" class="site-header__search"><input type="text" class="site-header__search-input" placeholder="Search hotels">
+      <button class="site-header__btn">
+        <svg class="search__icon">
+          <use xlink:href="assets/images/sprite.svg#icon-magnifying-glass"></use>
+        </svg>
+      </button>
+      </form>
+      <nav class="site-header__user-nav">
+        <div class="site-header__user-nav--icon-box">
+          <svg class="site-header__user-nav--icon">
+            <use xlink:href="assets/images/sprite.svg#icon-bookmark">
+            </use>
+          </svg>
+          <span class="site-header__user-nav--notification">7</span>
+        </div>
+        <div class="site-header__user-nav--icon-box">
+            <svg class="site-header__user-nav--icon">
+              <use xlink:href="assets/images/sprite.svg#icon-chat">
+              </use>
+            </svg>
+            <span class="site-header__user-nav--notification">13</span>
+          </div>
+          <div class="site-header__user-nav--user">
+            <img src="assets/images/user.jpg" alt="User photo" class="site-header__user-nav--user-photo">
+            <span class="site-header__user-nav--user-name">Dragan</span>
+          </div>
+      </nav>
     </header>
     <div class="site-content">
       <nav class="site-content__site-sidebar">
