@@ -1,0 +1,5 @@
+.site-header {
+    height: 7rem;
+    background-color: var(--colorWhite);
+    border-bottom: var(--colorGreyLight2);
+}

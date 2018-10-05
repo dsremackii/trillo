@@ -1,0 +1,7 @@
+.site-content {
+    display: flex;
+
+    &__site-sidebar {
+        background-color: var(--colorGreyDark1);
+        flex: 0 0 18%;
+}
