@@ -1,4 +1,6 @@
 .site-hotel-view {
-background-color: var(--colorWhite);
+background-color:blue;
 flex:1;
+height:80rem;
+
 }

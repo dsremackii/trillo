@@ -21,7 +21,8 @@
   <div class="container">
     <header class="site-header">
       <img src="assets/images/logo.png" alt="trilo logo" class="site-header__logo">
-      <form action="#" class="site-header__search"><input type="text" class="site-header__search-input" placeholder="Search hotels">
+      <form action="#" class="site-header__search">
+        <input type="text" class="site-header__search-input" placeholder="Search hotels">
       <button class="site-header__btn">
         <svg class="site-header__search-icon">
           <use xlink:href="assets/images/sprite.svg#icon-magnifying-glass"></use>
@@ -50,8 +51,48 @@
       </nav>
     </header>
     <div class="site-content">
-      <nav class="site-content__site-sidebar">
+      <nav class="site-content__site-navigation">
+          <ul class="site-content__site-navigation--site-nav">
+            <li class="site-content__site-navigation--site-nav--item site-content__site-navigation--site-nav--item--active">
+              <a href="#" class="site-content__site-navigation--site-nav--link">
+                <svg class="site-content__site-navigation--site-nav--icon">
+                  <use xlink:href="assets/images/sprite.svg#icon-home"></use>
+                  </svg>
+                  <span>Hotel</span>
+              </a>
+            </li>
 
+            <li class="site-content__site-navigation--site-nav--item">
+                <a href="#" class="site-content__site-navigation--site-nav--link">
+                  <svg class="site-content__site-navigation--site-nav--icon">
+                    <use xlink:href="assets/images/sprite.svg#icon-aircraft-take-off"></use>
+                    </svg>
+                    <span>Flight</span>
+                </a>
+              </li>
+
+              <li class="site-content__site-navigation--site-nav--item">
+                  <a href="#" class="site-content__site-navigation--site-nav--link">
+                    <svg class="site-content__site-navigation--site-nav--icon">
+                      <use xlink:href="assets/images/sprite.svg#icon-key"></use>
+                      </svg>
+                      <span>Car rental</span>
+                  </a>
+                </li>
+
+                <li class="site-content__site-navigation--site-nav--item">
+                    <a href="#" class="site-content__site-navigation--site-nav--link">
+                      <svg class="site-content__site-navigation--site-nav--icon">
+                        <use xlink:href="assets/images/sprite.svg#icon-map"></use>
+                        </svg>
+                        <span>Tours</span>
+                    </a>
+                  </li>
+          </ul>
+
+          <div class="site-content__site-navigation--legal">
+            &copy; 2018 by Me. All rights reserved.
+          </div>
       </nav>
       <main class="site-hotel-view">
 
