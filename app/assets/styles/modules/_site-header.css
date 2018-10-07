@@ -1,8 +1,9 @@
 .site-header {
     height: 7rem;
-    background-color: var(--colorWhite);
-    border-bottom: var(--colorGreyLight2);
     font-size: 1.4rem;
+    background-color: var(--colorWhite);
+    border-bottom: 1px solid var(--colorGreyLight2);
+    
 
     display: flex;
     justify-content: space-between;
