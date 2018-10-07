@@ -440,8 +440,11 @@ textarea {
 --colorGreyDark3:#999;
 
 --shadowDark:0 2rem 6rem rgba(0,0,0,.3);
+--shadowLight:0 2rem 5rem rgba(0, 0, 0, .06);
 
 --colorWhite: #FFF;
+
+--line: 1px solid var(--colorGreyLight2);
 }
 
 /* define mixins to use in css */
@@ -675,7 +678,7 @@ Instead edit gulp/templates/sprite */
     height: 7rem;
     font-size: 1.4rem;
     background-color: var(--colorWhite);
-    border-bottom: 1px solid var(--colorGreyLight2);
+    border-bottom:  var(--line);
     
 
     display: -ms-flexbox;
@@ -842,7 +845,7 @@ Instead edit gulp/templates/sprite */
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  border-bottom:  1px solid var(--colorGreyLight2);
+  border-bottom:  var(--line);
 }
 
 .site-hotel-view__overview--heading {
@@ -942,6 +945,90 @@ Instead edit gulp/templates/sprite */
         transform: scale(1);
         box-shadow: none;
     }
+}
+
+.site-hotel-view__detail {
+  display: -ms-flexbox;
+  display: flex;
+  padding:4.5rem;
+  background-color: var(--colorGreyLight1);
+  border-bottom: var(--line);
+}
+
+.site-hotel-view__description {
+  font-size: 1.4rem;
+  background-color: var(--colorWhite);
+  box-shadow: var(--shadowLight);
+  padding: 3rem;
+  -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+  margin-right: 4.5rem;
+}
+
+.site-hotel-view__description--paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.site-hotel-view__description--list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.site-hotel-view__description--list__item {
+  -ms-flex:0 0 50%;
+      flex:0 0 50%;
+  margin-bottom: .7rem;
+}
+
+.site-hotel-view__description--list__item:before {
+  content:"";
+  display: inline-block;
+  height: 1rem;
+  width:1rem;
+  margin-right: .7rem;/*older browsers
+                background-image: url(../../assets/images/chevron-thin-right.svg);
+                background-size: cover;*//*new browsers --masks*/
+  background-color: var(--colorPrimary);
+  -webkit-mask-image: url(../../assets/images/chevron-thin-right.svg);
+  -webkit-mask-size:cover;
+}
+
+.site-hotel-view__description--recommend {
+  font-size: 1.3rem;
+  color: var(--colorGreyDark3);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.site-hotel-view__description--recommend__photo {
+  box-sizing: content-box;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid var(--colorWhite);
+}
+
+.site-hotel-view__description--recommend__photo:not(:last-child) {
+  margin-right: -1.5rem;
+}
+
+.site-hotel-view__description--recommend__count {
+  margin-right: auto;
+}
+
+.site-hotel-view__user-review {
+  background-color: yellowgreen;
+  -ms-flex:1;
+      flex:1;
 }
 
 
