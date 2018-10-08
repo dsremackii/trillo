@@ -464,7 +464,16 @@ textarea {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;   /* 1rem =10px; */
+  font-size: 62.5%;
+}
+
+/* 1rem =10px; */
+
+@media (max-width: 68.75em) {
+
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -589,11 +598,28 @@ Instead edit gulp/templates/sprite */
     min-height: 50rem;
 }
 
+@media (max-width: 75em) {
+
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .site-content {
     display: -ms-flexbox;
     display: flex;
 
 
+}
+
+@media (max-width: 56.25em) {
+
+  .site-content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
 }
 
 .site-content__site-navigation {
@@ -614,6 +640,15 @@ Instead edit gulp/templates/sprite */
   margin-top: 3.5rem;
 }
 
+@media (max-width: 56.25em) {
+
+  .site-content__site-navigation--site-nav {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+}
+
 .site-content__site-navigation--site-nav--icon {
   width:1.75rem;
   height: 1.75rem;
@@ -627,6 +662,21 @@ Instead edit gulp/templates/sprite */
 
 .site-content__site-navigation--site-nav--item:not(:last-child) {
   margin-bottom:  .5rem;
+}
+
+@media (max-width: 56.25em) {
+
+  .site-content__site-navigation--site-nav--item:not(:last-child) {
+    margin: 0;
+  }
+}
+
+@media (max-width: 56.25em) {
+
+  .site-content__site-navigation--site-nav--item {
+    -ms-flex: 1;
+        flex: 1;
+  }
 }
 
 .site-content__site-navigation--site-nav--item:before {
@@ -667,11 +717,28 @@ Instead edit gulp/templates/sprite */
       align-items:center;
 }
 
+@media (max-width: 56.25em) {
+
+  .site-content__site-navigation--site-nav--link:link,
+            .site-content__site-navigation--site-nav--link:visited {
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 2rem;
+  }
+}
+
 .site-content__site-navigation--legal {
   font-size: 1.2rem;
   color: var(--colorGreyDark4);
   text-align: center;
   padding: 2.5rem;
+}
+
+@media (max-width: 56.25em) {
+
+  .site-content__site-navigation--legal {
+    display: none;
+  }
 }
 
 .site-header {
@@ -965,6 +1032,13 @@ Instead edit gulp/templates/sprite */
   border-bottom: var(--line);
 }
 
+@media (max-width: 56.25em) {
+
+  .site-hotel-view__detail {
+    padding: 3rem;
+  }
+}
+
 .site-hotel-view__description {
   background-color: var(--colorWhite);
   box-shadow: var(--shadowLight);
@@ -972,6 +1046,14 @@ Instead edit gulp/templates/sprite */
   -ms-flex: 0 0 60%;
       flex: 0 0 60%;
   margin-right: 4.5rem;
+}
+
+@media (max-width: 56.25em) {
+
+  .site-hotel-view__description {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .site-hotel-view__description--paragraph:not(:last-of-type) {
@@ -1062,6 +1144,14 @@ Instead edit gulp/templates/sprite */
   margin-right: 0;
 }
 
+@media (max-width: 56.25em) {
+
+  .site-hotel-view__review {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
 .site-hotel-view__review__text {
   margin-bottom: 2rem;
   z-index: 10;
@@ -1119,6 +1209,13 @@ Instead edit gulp/templates/sprite */
 .cta {
     padding: 3.5rem 0;
     text-align: center;
+}
+
+@media (max-width: 56.25em) {
+
+  .cta {
+    padding: 2.5rem 0;
+  }
 }
 
 .cta__book-now {

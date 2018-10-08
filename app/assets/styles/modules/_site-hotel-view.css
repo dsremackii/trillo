@@ -20,6 +20,8 @@
         align-items: center;
         border-bottom:  var(--line);
 
+        
+
 
         &--heading {
             font-size: 2.25rem;
@@ -137,6 +139,10 @@
         padding:4.5rem;
         background-color: var(--colorGreyLight1);
         border-bottom: var(--line);
+
+        @mixin atMedium {
+            padding:3rem;
+         }
         
         
     }
@@ -147,6 +153,11 @@
         padding: 3rem;
         flex: 0 0 60%;
         margin-right: 4.5rem;
+
+        @mixin atMedium{
+            padding:2rem;
+            margin-right: 3rem;
+         }
 
         &--paragraph:not(:last-of-type) {
             margin-bottom: 2rem;
@@ -239,6 +250,11 @@
         overflow: hidden;
         margin-left: 0;
         margin-right: 0;
+
+        @mixin atMedium{
+            padding:2rem;
+            margin-bottom: 3rem;
+         }
         
 
         &__text {

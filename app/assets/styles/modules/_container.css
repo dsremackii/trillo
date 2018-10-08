@@ -5,4 +5,10 @@
     box-shadow: var(--shadowDark);
 
     min-height: 50rem;
+
+    @mixin atLargest {
+        margin: 0;
+        max-width: 100%;
+        width:100%;
+    }
 }
