@@ -29,6 +29,11 @@
             text-transform:uppercase;
             letter-spacing:1px;
             padding:1.5rem 3rem;
+
+            @mixin atSmall{
+                font-size: 1.8rem;
+                padding: 1.25rem 2rem;
+             }
         }
 
         &--stars {
@@ -63,18 +68,29 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+
+            @mixin atSmall{
+                padding:0 1.5rem;
+             }
         }
 
         &--rating-average {
             font-size: 2.25rem;
             font-weight: 300;
             margin-bottom: -3px;
+
+            @mixin atSmall{
+                font-size: 1.8rem;
+             }
         }
 
         &--rating-count {   
             font-size: .8rem;
             text-transform: uppercase;
             
+            @mixin atSmall{
+                font-size: .5rem;
+             }
             
         }
 
@@ -143,6 +159,10 @@
         @mixin atMedium {
             padding:3rem;
          }
+
+         @mixin atSmall{
+            flex-direction:column;
+         }
         
         
     }
@@ -157,6 +177,11 @@
         @mixin atMedium{
             padding:2rem;
             margin-right: 3rem;
+         }
+
+         @mixin atSmall{
+            margin:0;
+            margin-bottom:3rem;
          }
 
         &--paragraph:not(:last-of-type) {

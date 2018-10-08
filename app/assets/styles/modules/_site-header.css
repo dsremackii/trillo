@@ -9,6 +9,12 @@
     justify-content: space-between;
     align-items: center;
 
+    @mixin atSmallest{
+        flex-wrap: wrap;
+        align-content:space-around;
+        height: 11rem;
+     }
+
     &__logo {
         height: 3.25rem;
         margin-left: 2rem;
@@ -20,6 +26,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @mixin atSmallest{
+        order: 1;
+        flex: 0 0 100%;
+        background-color:var(--colorGreyLight2);
+        }
     }
 
     &__search-input {
@@ -93,7 +105,7 @@
             align-items: center;
         }
 
-        &>*:hover {
+        & > *:hover {
             background-color: var(--colorGreyLight2);
         }
 
@@ -112,7 +124,8 @@
             font-size:  .8rem;
             height: 1.75rem;
             width:  1.75rem;
-            border-radius: 50%;
+            border-radius: 
+            ;
             background-color: var(--colorPrimary);
             color: colorWhite;
             position: absolute;

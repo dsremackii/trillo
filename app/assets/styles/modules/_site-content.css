@@ -29,6 +29,13 @@
                 height: 1.75rem;
                 margin-right: 2rem;
                 fill: currentColor;
+
+                @mixin atSmall{
+                    margin-right: 0;
+                    margin-bottom: .7rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                 }
             }
 
             &--item {
@@ -86,8 +93,14 @@
 
                 @mixin atMedium{
                    justify-content:center;
-                   padding:2rem;
+                   padding:2rem .5rem;
                 }
+
+                @mixin atSmall{
+                    flex-direction:column;
+                    padding: 1.5rem;
+                 }
+                
             }
        }
         

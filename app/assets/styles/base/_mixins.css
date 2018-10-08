@@ -1,4 +1,14 @@
-/* define mixins to use in css */
+@define-mixin atSmallest {
+  @media (max-width: 31.25em) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmall {
+  @media (max-width: 37.5em) {
+    @mixin-content;
+  }
+}
 
 @define-mixin atMedium {
     @media (max-width: 56.25em) {

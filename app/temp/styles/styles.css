@@ -447,8 +447,6 @@ textarea {
 --line: 1px solid var(--colorGreyLight2);
 }
 
-/* define mixins to use in css */
-
 /* edit how you want to use global html */
 
 * {
@@ -656,6 +654,16 @@ Instead edit gulp/templates/sprite */
   fill: currentColor;
 }
 
+@media (max-width: 37.5em) {
+
+  .site-content__site-navigation--site-nav--icon {
+    margin-right: 0;
+    margin-bottom: .7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 .site-content__site-navigation--site-nav--item {
   position: relative;
 }
@@ -723,7 +731,17 @@ Instead edit gulp/templates/sprite */
             .site-content__site-navigation--site-nav--link:visited {
     -ms-flex-pack: center;
         justify-content: center;
-    padding: 2rem;
+    padding: 2rem .5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+
+  .site-content__site-navigation--site-nav--link:link,
+            .site-content__site-navigation--site-nav--link:visited {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 1.5rem;
   }
 }
 
@@ -760,6 +778,17 @@ Instead edit gulp/templates/sprite */
     
 }
 
+@media (max-width: 31.25em) {
+
+  .site-header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    height: 11rem;
+  }
+}
+
 .site-header__logo {
   height: 3.25rem;
   margin-left: 2rem;
@@ -774,6 +803,17 @@ Instead edit gulp/templates/sprite */
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+@media (max-width: 31.25em) {
+
+  .site-header__search {
+    -ms-flex-order: 1;
+        order: 1;
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    background-color: var(--colorGreyLight2);
+  }
 }
 
 .site-header__search-input {
@@ -847,7 +887,7 @@ Instead edit gulp/templates/sprite */
       align-items: center;
 }
 
-.site-header__user-nav>*:hover {
+.site-header__user-nav > *:hover {
   background-color: var(--colorGreyLight2);
 }
 
@@ -866,7 +906,8 @@ Instead edit gulp/templates/sprite */
   font-size:  .8rem;
   height: 1.75rem;
   width:  1.75rem;
-  border-radius: 50%;
+  border-radius: 
+            ;
   background-color: var(--colorPrimary);
   color: colorWhite;
   position: absolute;
@@ -923,6 +964,14 @@ Instead edit gulp/templates/sprite */
   padding:1.5rem 3rem;
 }
 
+@media (max-width: 37.5em) {
+
+  .site-hotel-view__overview--heading {
+    font-size: 1.8rem;
+    padding: 1.25rem 2rem;
+  }
+}
+
 .site-hotel-view__overview--stars {
   margin-right: auto;
   display: -ms-flexbox;
@@ -965,15 +1014,36 @@ Instead edit gulp/templates/sprite */
       flex-direction: column;
 }
 
+@media (max-width: 37.5em) {
+
+  .site-hotel-view__overview--rating {
+    padding: 0 1.5rem;
+  }
+}
+
 .site-hotel-view__overview--rating-average {
   font-size: 2.25rem;
   font-weight: 300;
   margin-bottom: -3px;
 }
 
+@media (max-width: 37.5em) {
+
+  .site-hotel-view__overview--rating-average {
+    font-size: 1.8rem;
+  }
+}
+
 .site-hotel-view__overview--rating-count {
   font-size: .8rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 37.5em) {
+
+  .site-hotel-view__overview--rating-count {
+    font-size: .5rem;
+  }
 }
 
 .site-hotel-view__overview--btn-inline {
@@ -1039,6 +1109,14 @@ Instead edit gulp/templates/sprite */
   }
 }
 
+@media (max-width: 37.5em) {
+
+  .site-hotel-view__detail {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .site-hotel-view__description {
   background-color: var(--colorWhite);
   box-shadow: var(--shadowLight);
@@ -1053,6 +1131,14 @@ Instead edit gulp/templates/sprite */
   .site-hotel-view__description {
     padding: 2rem;
     margin-right: 3rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+
+  .site-hotel-view__description {
+    margin: 0;
+    margin-bottom: 3rem;
   }
 }
 
