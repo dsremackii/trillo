@@ -1,9 +1,10 @@
 /* edit how you want to use global html */
 
-  *{
+  * {
     margin: 0;
     padding: 0;
   }
+
   *,
   *::before,
   *::after {
